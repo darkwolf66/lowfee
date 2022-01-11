@@ -1,0 +1,969 @@
+{
+  "contractName": "UsingSharedStructs",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SharedStructs.sol\":\"UsingSharedStructs\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":500},\"remappings\":[]},\"sources\":{\"project:/contracts/SharedStructs.sol\":{\"keccak256\":\"0x19326b3b46204cc2e2347732d138b204c99a760448501f5bd4c85008cb67fc2a\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://ade06c4773f824cbd9b32b463e4322662c754e2bf831a9c5dc4e7326b0eeb9d7\",\"dweb:/ipfs/QmYe9e1gXUW6A68nSvn54WsSHjRwMyWtuFj3r5sFEbJHjC\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205ca2026466edae6193dae6d72f315b525cbd1b1516ee4079b37067fc394c3ea364736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212205ca2026466edae6193dae6d72f315b525cbd1b1516ee4079b37067fc394c3ea364736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:541:12:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:541:12:-:0;;;;;",
+  "source": "//SPDX-License-Identifier: UNLICENSED\r\npragma solidity ^0.8.0;\r\n\r\ncontract UsingSharedStructs {\r\n    struct Campaign {\r\n        string title;\r\n        string quickDescription;\r\n        string descriptionUrl;\r\n        string logoUrl;\r\n        string coverUrl;\r\n        string auditUrl;\r\n        uint256 coinRate;\r\n        uint256 goal;\r\n        uint256 startDate;\r\n        uint256 endDate;\r\n\r\n        string social_facebook_url;\r\n        string social_twitter_url;\r\n        string social_discord_url;\r\n        string social_telegram_url;\r\n        string website_url;\r\n        string whitepaper_url;\r\n    }\r\n}\r\n",
+  "sourcePath": "D:\\Projetos\\zeroFee\\Platform\\contracts\\SharedStructs.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/SharedStructs.sol",
+    "exportedSymbols": {
+      "UsingSharedStructs": [
+        1885
+      ]
+    },
+    "id": 1886,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1851,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1885,
+        "linearizedBaseContracts": [
+          1885
+        ],
+        "name": "UsingSharedStructs",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "UsingSharedStructs.Campaign",
+            "id": 1884,
+            "members": [
+              {
+                "constant": false,
+                "id": 1853,
+                "mutability": "mutable",
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "128:12:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1852,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1855,
+                "mutability": "mutable",
+                "name": "quickDescription",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "151:23:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1854,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1857,
+                "mutability": "mutable",
+                "name": "descriptionUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "185:21:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1856,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1859,
+                "mutability": "mutable",
+                "name": "logoUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "217:14:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1858,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "217:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1861,
+                "mutability": "mutable",
+                "name": "coverUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "242:15:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1860,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "242:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1863,
+                "mutability": "mutable",
+                "name": "auditUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "268:15:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1862,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "268:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1865,
+                "mutability": "mutable",
+                "name": "coinRate",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "294:16:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1864,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "294:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1867,
+                "mutability": "mutable",
+                "name": "goal",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "321:12:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1866,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "321:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1869,
+                "mutability": "mutable",
+                "name": "startDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "344:17:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1868,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "344:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1871,
+                "mutability": "mutable",
+                "name": "endDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "372:15:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1870,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "372:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1873,
+                "mutability": "mutable",
+                "name": "social_facebook_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "400:26:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1872,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "400:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1875,
+                "mutability": "mutable",
+                "name": "social_twitter_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "437:25:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1874,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "437:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1877,
+                "mutability": "mutable",
+                "name": "social_discord_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "473:25:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1876,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "473:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1879,
+                "mutability": "mutable",
+                "name": "social_telegram_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "509:26:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1878,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "509:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1881,
+                "mutability": "mutable",
+                "name": "website_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "546:18:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1880,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "546:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1883,
+                "mutability": "mutable",
+                "name": "whitepaper_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "575:21:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1882,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "575:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Campaign",
+            "nodeType": "StructDefinition",
+            "scope": 1885,
+            "src": "101:503:12",
+            "visibility": "public"
+          }
+        ],
+        "scope": 1886,
+        "src": "66:541:12"
+      }
+    ],
+    "src": "39:570:12"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/SharedStructs.sol",
+    "exportedSymbols": {
+      "UsingSharedStructs": [
+        1885
+      ]
+    },
+    "id": 1886,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1851,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1885,
+        "linearizedBaseContracts": [
+          1885
+        ],
+        "name": "UsingSharedStructs",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "UsingSharedStructs.Campaign",
+            "id": 1884,
+            "members": [
+              {
+                "constant": false,
+                "id": 1853,
+                "mutability": "mutable",
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "128:12:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1852,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1855,
+                "mutability": "mutable",
+                "name": "quickDescription",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "151:23:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1854,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1857,
+                "mutability": "mutable",
+                "name": "descriptionUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "185:21:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1856,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1859,
+                "mutability": "mutable",
+                "name": "logoUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "217:14:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1858,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "217:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1861,
+                "mutability": "mutable",
+                "name": "coverUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "242:15:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1860,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "242:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1863,
+                "mutability": "mutable",
+                "name": "auditUrl",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "268:15:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1862,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "268:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1865,
+                "mutability": "mutable",
+                "name": "coinRate",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "294:16:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1864,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "294:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1867,
+                "mutability": "mutable",
+                "name": "goal",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "321:12:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1866,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "321:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1869,
+                "mutability": "mutable",
+                "name": "startDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "344:17:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1868,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "344:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1871,
+                "mutability": "mutable",
+                "name": "endDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "372:15:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1870,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "372:7:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1873,
+                "mutability": "mutable",
+                "name": "social_facebook_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "400:26:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1872,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "400:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1875,
+                "mutability": "mutable",
+                "name": "social_twitter_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "437:25:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1874,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "437:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1877,
+                "mutability": "mutable",
+                "name": "social_discord_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "473:25:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1876,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "473:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1879,
+                "mutability": "mutable",
+                "name": "social_telegram_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "509:26:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1878,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "509:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1881,
+                "mutability": "mutable",
+                "name": "website_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "546:18:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1880,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "546:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1883,
+                "mutability": "mutable",
+                "name": "whitepaper_url",
+                "nodeType": "VariableDeclaration",
+                "scope": 1884,
+                "src": "575:21:12",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1882,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "575:6:12",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Campaign",
+            "nodeType": "StructDefinition",
+            "scope": 1885,
+            "src": "101:503:12",
+            "visibility": "public"
+          }
+        ],
+        "scope": 1886,
+        "src": "66:541:12"
+      }
+    ],
+    "src": "39:570:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-11T00:16:17.480Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
