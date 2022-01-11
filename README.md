@@ -70,7 +70,7 @@ Remember to run the compile and migrate before start using it. And keep it runni
 #### Preparing React /lowfee/client
 Now make sure you opened a new terminal while truffle is running and you can do
 ```bash
-  cd lowfee
+  cd lowfee/client
   npm install
 ```
 After that you can check the /lowfee/client/src/index.js where you can set the config for web3, drizzle, truffle and other stuff.
